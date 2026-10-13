@@ -1,5 +1,7 @@
 # field-service-mcp-demo
 
+> **About this repo:** This is not the production server. It was written from scratch for this repository and contains no code, data, credentials or identifiers from the production system or the client it was built for. It reproduces that system's architecture and controls against a mock API so they can be run and tested in the open.
+
 A runnable rebuild of the design behind a production ServiceTitan MCP server I built for a home services company running three regional brands. The production code isn't public, so this version runs against a small mock ServiceTitan-style API with fake data. It keeps the parts that matter: read tools and draft-only write tools in separate servers, the tenant taken from a signed run token instead of from tool arguments, a Claude Code PreToolUse hook that denies by default, and approvals bound to a hash of the exact payload. It is not affiliated with ServiceTitan.
 
 ```bash
