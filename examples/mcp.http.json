@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "fieldservice_read": {
+      "type": "http",
+      "url": "http://127.0.0.1:7801/mcp/read",
+      "headers": { "Authorization": "Bearer ${RUN_TOKEN}" }
+    },
+    "fieldservice_drafts": {
+      "type": "http",
+      "url": "http://127.0.0.1:7801/mcp/drafts",
+      "headers": { "Authorization": "Bearer ${RUN_TOKEN}" }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "fieldservice_read": {
+      "command": "node",
+      "args": ["dist/src/stdio.js", "read"],
+      "env": { "RUN_TOKEN": "${RUN_TOKEN}", "GATEWAY_URL": "http://127.0.0.1:7801" }
+    },
+    "fieldservice_drafts": {
+      "command": "node",
+      "args": ["dist/src/stdio.js", "drafts"],
+      "env": { "RUN_TOKEN": "${RUN_TOKEN}", "GATEWAY_URL": "http://127.0.0.1:7801" }
+    }
+  }
+}

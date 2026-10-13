@@ -1,0 +1,12 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          { "type": "command", "command": "node \"$GATE_DIR/dist/src/hook/pretooluse.js\"", "timeout": 10 }
+        ]
+      }
+    ]
+  }
+}
